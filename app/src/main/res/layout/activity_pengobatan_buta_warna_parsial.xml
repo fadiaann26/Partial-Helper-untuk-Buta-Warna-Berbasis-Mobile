@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="pengobatanButaWarnaParsialVM" type="com.partialhelperapp.app.modules.pengobatanbutawarnaparsial.data.viewmodel.PengobatanButaWarnaParsialVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleeightyone"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_49pxv"
+        android:layout_marginEnd="@dimen/_28pxh"
+        android:layout_marginStart="@dimen/_26pxh"
+        android:layout_marginTop="@dimen/_32pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecyan_50">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="center_horizontal"
+                android:id="@+id/linearPengobatanButa"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageRectangleEightyOne"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_width="@dimen/_175pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle78}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle78"/>
+                <TextView android:gravity="center_horizontal"
+                    android:id="@+id/txtPengobatanButa"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_53pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_17pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{pengobatanButaWarnaParsialVM.pengobatanButaWarnaParsialModel.txtPengobatanButa}"
+                    style="@style/txtPoppinsbold20" tools:text="@string/msg_pengobatan_but"/>
+                <TextView android:gravity="start"
+                    android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_16pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{pengobatanButaWarnaParsialVM.pengobatanButaWarnaParsialModel.txtDescription}"
+                    style="@style/txtPoppinsmedium13" tools:text="@string/msg_hingga_saat_ini"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnKembali"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_49pxv"
+                    android:layout_marginEnd="@dimen/_54pxh"
+                    android:layout_marginStart="@dimen/_54pxh"
+                    android:layout_marginTop="@dimen/_32pxv"
+                    android:layout_width="@dimen/_148pxh"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_kembali"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_kembali"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

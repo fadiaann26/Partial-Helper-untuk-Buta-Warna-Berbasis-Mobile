@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="penjelasanButaWarnaParsialVM" type="com.partialhelperapp.app.modules.penjelasanbutawarnaparsial.data.viewmodel.PenjelasanButaWarnaParsialVM"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnrectangleseventyeight"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_39pxv"
+        android:layout_marginEnd="@dimen/_34pxh"
+        android:layout_marginStart="@dimen/_34pxh"
+        android:layout_marginTop="@dimen/_32pxv"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylecyan_50">
+        <ScrollView android:clipToPadding="false"
+            android:fillViewport="true" android:gravity="start"
+            android:id="@+id/scrollViewScrollview"
+            android:layout_height="0dp" android:layout_weight="1" android:layout_width="match_parent">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearPenjelasanButa"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" android:orientation="vertical">
+                <ImageView android:id="@+id/imageRectangleSeventyEight"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_50pxh"
+                    android:layout_marginEnd="@dimen/_57pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_width="@dimen/_175pxh"
+                    android:scaleType="fitXY"
+                    imageRes="@{@drawable/img_rectangle78}"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_rectangle78"/>
+                <TextView android:ellipsize="end"
+                    android:id="@+id/txtLanguage"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_24pxv"
+                    android:layout_width="match_parent"
+                    android:singleLine="true"
+                    android:text="@{penjelasanButaWarnaParsialVM.penjelasanButaWarnaParsialModel.txtLanguage}"
+                    style="@style/txtPoppinsbold20" tools:text="@string/msg_apa_itu_buta_w2"/>
+                <TextView android:id="@+id/txtDescription"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_9pxv"
+                    android:layout_width="match_parent"
+                    android:text="@{penjelasanButaWarnaParsialVM.penjelasanButaWarnaParsialModel.txtDescription}"
+                    style="@style/txtPoppinsmedium12" tools:text="@string/msg_buta_warna_pars"/>
+                <androidx.appcompat.widget.AppCompatButton
+                    android:ellipsize="end" android:gravity="center"
+                    android:id="@+id/btnKembali"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="@dimen/_57pxh"
+                    android:layout_marginStart="@dimen/_57pxh"
+                    android:layout_marginTop="@dimen/_45pxv"
+                    android:layout_width="match_parent"
+                    android:paddingBottom="@dimen/_14pxv"
+                    android:paddingEnd="@dimen/_30pxh"
+                    android:paddingStart="@dimen/_30pxh"
+                    android:paddingTop="@dimen/_14pxv"
+                    android:singleLine="true"
+                    android:text="@string/lbl_kembali"
+                    android:textAllCaps="false"
+                    style="@style/btnSolidRounded_2" tools:text="@string/lbl_kembali"/>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+</layout>

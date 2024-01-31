@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools">
+    <data>
+        <variable name="gridapaitubutawaRowModel" type="com.partialhelperapp.app.modules.halamanawalone.data.model.GridapaitubutawaRowModel"/>
+    </data>
+    <LinearLayout android:gravity="center_horizontal"
+        android:id="@+id/linearColumnapaitubutawa"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700cornerRadius">
+        <TextView android:gravity="center_horizontal"
+            android:id="@+id/txtApaituButaWa"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_23pxv"
+            android:layout_width="match_parent"
+            android:text="@{gridapaitubutawaRowModel.txtApaituButaWa}"
+            style="@style/txtPoppinsmedium12" tools:text="@string/msg_apa_itu_buta_w"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:ellipsize="end" android:gravity="center"
+            android:id="@+id/btnPenjelasan"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_16pxv"
+            android:layout_marginEnd="@dimen/_20pxh"
+            android:layout_marginStart="@dimen/_20pxh"
+            android:layout_marginTop="@dimen/_11pxv"
+            android:layout_width="match_parent"
+            android:paddingBottom="@dimen/_11pxv"
+            android:paddingEnd="@dimen/_17pxh"
+            android:paddingStart="@dimen/_16pxh"
+            android:paddingTop="@dimen/_11pxv" android:singleLine="true"
+            android:text="@string/lbl_penjelasan"
+            android:textAllCaps="false" style="@style/btnSolidRounded" tools:text="@string/lbl_penjelasan"/>
+    </LinearLayout>
+</layout>
